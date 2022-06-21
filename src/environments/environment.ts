@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: 'AIzaSyCNJG-6G8nRIkYoKMveIZu3jLqbvvSWQUc',
+  authDomain: 'maliwa-funerals.firebaseapp.com',
+  projectId: 'maliwa-funerals',
+  storageBucket: 'maliwa-funerals.appspot.com',
+  messagingSenderId: '587667770498',
+  appId: '1:587667770498:web:7f67faf8909a21eb30f89b',
 };
 
 /*

@@ -1,0 +1,153 @@
+.heading {
+  display: contents;
+  justify-content: flex-start !important;
+  padding-left: 2% !important;
+
+  h2 {
+    margin-left: 5%;
+    color: #333;
+  }
+}
+
+.deals {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  .single-deal {
+    width: 26%;
+    height: 90%;
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    .img {
+      width: 100%;
+      height: 40%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text {
+      padding-top: 0.8rem;
+      padding-left: 0.5rem;
+      width: 100%;
+      height: 50%;
+
+      h5 {
+        color: #333;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      p {
+        color: #777;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      i {
+        color: #cd9833;
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 1.2rem;
+      }
+    }
+
+    .btns {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+
+      button {
+        width: 6.5rem;
+        height: 80%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+
+      .update {
+        background: transparent;
+        border: 1px solid #cd9833;
+        color: #cd9833;
+        font-size: 1.18rem;
+      }
+
+      .remove {
+        background: red;
+        color: #ddd;
+        font-size: 1.18rem;
+      }
+    }
+  }
+}
+
+.add {
+  margin-left: 5%;
+  width: 6rem;
+  background: #3e4093;
+  color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.18rem;
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  ion-header {
+    display: initial !important;
+
+    h4 {
+      margin-left: 3rem !important;
+    }
+  }
+  .deals {
+    height: 210vh !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    .single-deal {
+      width: 96% !important;
+      height: 32% !important;
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  ion-header {
+    h4 {
+      margin-left: 14rem !important;
+    }
+  }
+
+  .deals {
+    height: 148vh !important;
+
+    .single-deal {
+      width: 31% !important;
+    }
+  }
+}

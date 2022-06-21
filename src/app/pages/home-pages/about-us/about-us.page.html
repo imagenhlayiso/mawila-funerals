@@ -1,0 +1,213 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="desktop-menu" (scroll)="onWindowScroll();">
+      <a class="logo">
+        <img src="../../../../assets/funeral.png" />
+      </a>
+
+      <ul>
+        <li (click)="home()">
+          <a>Home</a>
+        </li>
+        <li (click)="gallery()">
+          <a>Gallery</a>
+        </li>
+        <li (click)="about()" class="active">
+          <a>About US</a>
+        </li>
+        <li (click)="contact()">
+          <a>Contact US</a>
+        </li>
+        <li (click)="admin()">
+          <a>Admin</a>
+        </li>
+
+        <div class="search-area">
+          <ion-input placeholder="Type a keyword"></ion-input>
+          <ion-button>SEARCH</ion-button>
+        </div>
+      </ul>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="box-wrapper">
+  <div class="banner">
+    <div class="over-banner">
+      <div>
+        <p>Home / About Us</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="first-about-us">
+    <div class="heading">
+      <h2>Our History</h2>
+    </div>
+    <div class="history">
+      <div class="single-history">
+        <div class="img-div">
+          <img src="../../../../assets/one.jpg" alt="" />
+        </div>
+        <p>Founded In</p>
+        <i>1978</i>
+      </div>
+      <div class="dot-border"></div>
+      <div class="single-history">
+        <div class="img-div">
+          <img src="../../../../assets/two.jpg" alt="" />
+        </div>
+        <p>Opened our 2nd shop</p>
+        <i>1995</i>
+      </div>
+      <div class="dot-border"></div>
+      <div class="single-history">
+        <div class="img-div">
+          <img src="../../../../assets/15942291.jpg" alt="" />
+        </div>
+        <p>Franchised</p>
+        <i>2020</i>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="heading">
+      <h2>Our Members</h2>
+    </div>
+
+    <div class="members">
+      <div class="single-member">
+        <div class="bi">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            officiis necessitatibus adipisci velit iusto molestias voluptas
+            fugit earum, harum nesciunt illum facilis ratione minus ea!
+          </p>
+        </div>
+        <div class="member-pic">
+          <img src="../../../../assets/mane.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h4>Peter Drury</h4>
+          <p>CEO MHHS</p>
+        </div>
+      </div>
+
+      <div class="flex-dot"></div>
+
+      <div class="single-member">
+        <div class="bi">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            officiis necessitatibus adipisci velit iusto molestias voluptas
+            fugit earum, harum nesciunt illum facilis ratione minus ea!
+          </p>
+        </div>
+        <div class="member-pic">
+          <img src="../../../../assets/profile.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h4>Image Nhlayiso</h4>
+          <p>CFO MHHS</p>
+        </div>
+      </div>
+
+      <div class="flex-dot"></div>
+
+      <div class="single-member">
+        <div class="bi">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            officiis necessitatibus adipisci velit iusto molestias voluptas
+            fugit earum, harum nesciunt illum facilis ratione minus ea!
+          </p>
+        </div>
+        <div class="member-pic">
+          <img src="../../../../assets/mane.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h4>Peter Drury</h4>
+          <p>CEO MHHS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ion-grid class="mid-foot">
+      <ion-row class="foot-wrap">
+        <ion-col class="foot-middle" size="4">
+          <!-- <h5><i class="yell">Y</i>ellow<i class="yell">B</i>in</h5> -->
+          <h5 style="margin-left: 0" class="theeLogo">
+            <img
+              class="img-logo"
+              src="../../../../assets/logo.PNG"
+              alt="Mawila-HHS"
+            />
+          </h5>
+
+          <br />
+          <div class="fSocials">
+            <div>
+              <a><ion-icon class="face" name="logo-facebook"></ion-icon></a>
+              <p>facebook</p>
+            </div>
+            <div>
+              <a><ion-icon class="tweet" name="logo-twitter"></ion-icon></a>
+              <p>twitter</p>
+            </div>
+            <div>
+              <a><ion-icon class="insta" name="logo-instagram"></ion-icon></a>
+              <p>instagram</p>
+            </div>
+          </div>
+
+          <p>Subscribe to get updates</p>
+          <div class="search-area">
+            <ion-input placeholder="Enter Your Email Address"></ion-input>
+            <ion-button>SEARCH</ion-button>
+          </div>
+        </ion-col>
+        <ion-col class="foot-middle middle" size="4">
+          <h5>See More</h5>
+          <br /><br /><br />
+          <div>
+            <a routerLink="/login">Upcoming Events</a>
+            <a routerLink="/about">Memorials</a>
+            <a routerLink="/about">Get a obituary</a>
+            <a routerLink="/about">Tombstones and Burials</a>
+          </div>
+        </ion-col>
+        <ion-col class="foot-middle right" size="4">
+          <h5>Get in touch</h5>
+          <br />
+          <p>
+            <ion-icon name="compass-outline"></ion-icon> &nbsp;&nbsp;&nbsp; 26
+            Street Lekazi, Nelspruit 2014
+          </p>
+          <br />
+          <p>
+            <ion-icon name="call-outline"></ion-icon>
+            &nbsp;&nbsp;&nbsp; 012 264 6425
+          </p>
+          <br />
+          <p>
+            <ion-icon name="mail-open-outline"></ion-icon>
+            &nbsp;&nbsp;&nbsp; mawila@services.com
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <hr
+      style="
+        background: #3e4093 !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      "
+    />
+
+    <div class="last-footer">
+      <p>Copyright &copy; &nbsp; MK INNOVATIONS 2022</p>
+    </div>
+  </footer>
+</ion-content>
